@@ -12,6 +12,13 @@ describe('user model', () => {
         expect(user.body.username).toMatch(/register/)
     })
 
+    it('should check logged in user', async () => {
+        const response = await request(server).post('/api/auth/register').send({ username: 'test', password: 'test' })
+
+        const login = await request(server).post('/api/auth/login').send({username: 'test', password: 'test'})
+        expect(response.body.username).toMatch(/test/)
+    })
+
     it('should return status 200 on login', async() => {
 
         //register

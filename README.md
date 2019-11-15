@@ -44,9 +44,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
 
+    Bcrypt allows us to hash strings which can be used for setting passwords. Hash takes the string and produces  random series of letters and numbers to "hide" the password 
+
 - [ ] What does bcrypt do to slow down attackers?
 
+    Bcrypt makes it difficult to 'reverse compute' the original password from the hashed password.
+
 - [ ] What are the three parts of the JSON Web Token?
+
+    Header, Payload, Signature
+    Header consists of a jwt and a signing algorithm.
+
+    Payload contains the claims which are statements about an entity (usually the user).
+
+    Signature creates the encoded header, secret and payload.
+
 
 ## Minimum Viable Product
 
