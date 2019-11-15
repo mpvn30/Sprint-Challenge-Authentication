@@ -40,6 +40,8 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] What is the purpose of using _sessions_?
 
+    Sessions is a middleware that stores user or data information into a server. It allows us to manage sessions which can also limit the time users can use restricted urls and such.
+
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
 
 - [ ] What does bcrypt do to slow down attackers?
@@ -50,9 +52,9 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Implement an User Authentication System. Hash user's passwords before saving them to the database. Use `JSON Web Tokens` or `Sessions and Cookies` to persist authentication across requests.
 
-- [ ] Implement the `register` and `login` functionality inside `/auth/auth-router.js`. A `user` has `username` and `password`. Both properties are required.
-- [ ] Implement the `authenticate` middleware inside `/auth/authenticate-middleware.js`.
-- [ ] Write a **minimum o 2 tests** per API endpoint. Write more tests if you have time.
+- [/] Implement the `register` and `login` functionality inside `/auth/auth-router.js`. A `user` has `username` and `password`. Both properties are required.
+- [/] Implement the `authenticate` middleware inside `/auth/authenticate-middleware.js`.
+- [/] Write a **minimum o 2 tests** per API endpoint. Write more tests if you have time.
 
 **Note**: the database already has the users table, but if you run into issues, the migrations are available.
 
